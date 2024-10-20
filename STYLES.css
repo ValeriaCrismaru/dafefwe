@@ -6,17 +6,17 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9; /* Alb */
+    background-color: #e0f7fa; /* Albastru deschis */
     line-height: 1.6;
 }
 
 header {
-    background-color: #007bff; /* Albastru */
+    background-color: #141414; 
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 15px;
+    padding: 10px 20px; /* Am redus paddingul pentru a micșora bara */
 }
 
 .logo img {
@@ -30,32 +30,34 @@ header {
 .navbar ul {
     list-style: none;
     display: flex;
+    align-items: center; /* Aliniem elementele vertical */
 }
 
 .navbar ul li {
     position: relative;
-    margin: 0 15px;
+    margin: 0 15px; /* Am redus marginea între elemente */
 }
 
 .navbar ul li a {
     color: white;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 10px 15px; /* Am micșorat paddingul pentru a îmbunătăți aspectul */
     transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px; /* Adăugăm colțuri rotunjite */
 }
 
 .navbar ul li a:hover {
-    background-color: #0056b3; /* Albastru închis */
-    color: #ffc107; /* Galben */
-    border-radius: 4px;
+    background-color: #00838f; /* Albastru închis */
+    color: #ffeb3b; /* Galben */
 }
 
 .navbar ul li ul {
     display: none;
     position: absolute;
-    background-color: #0056b3; /* Albastru închis */
+    background-color: #00838f; /* Albastru închis */
     padding: 10px;
     border-radius: 5px;
+    z-index: 1; /* Asigurăm că dropdown-ul este deasupra altor elemente */
 }
 
 .navbar ul li:hover ul {
@@ -63,55 +65,57 @@ header {
 }
 
 .banner {
-    background-color: #4caf50; /* Verde */
+    position: relative;
+}
+
+.banner-content {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
     text-align: center;
-    padding: 30px 10px;
 }
 
-.banner h1 {
-    font-size: 2.5rem;
-}
-
-.banner p {
-    font-size: 1.25rem;
-    margin-top: 10px;
+.banner-img {
+    width: 100%;
+    height: auto;
 }
 
 .latest-news {
-    background-color: white;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
     margin: 20px auto;
-    max-width: 800px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .latest-news h2 {
-    color: #dc3545; /* Roșu */
+    color: #d32f2f; /* Roșu */
     margin-bottom: 15px;
 }
 
 .news-card {
-    border: 1px solid #dee2e6;
+    border: 1px solid #b0bec5;
     border-radius: 5px;
     padding: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     transition: box-shadow 0.3s;
 }
 
 .news-card:hover {
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .news-card h3 {
-    color: #333;
+    color: #37474f;
 }
 
 .news-card a {
     display: inline-block;
     margin-top: 10px;
-    color: #007bff;
+    color: #141414;
     text-decoration: none;
 }
 
@@ -121,47 +125,32 @@ header {
 
 .speakers {
     margin: 20px auto;
-    max-width: 800px;
+    max-width: 900px;
 }
 
 .speaker {
     display: flex;
     align-items: center;
-    margin: 15px 0;
+    margin: 20px 0;
 }
 
 .speaker img {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
-.program {
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #ffc107; /* Galben */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.program h2 {
-    color: #333;
-}
-
-.event {
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: white;
-    border-radius: 5px;
-    border: 1px solid #dee2e6;
+.speaker h3 {
+    font-size: 1.4rem;
+    color: #37474f;
 }
 
 footer {
-    background-color: #343a40; /* Negru */
+    background-color: #263238; /* Gri închis */
     color: white;
     text-align: center;
-    padding: 15px 0;
+    padding: 20px 0;
 }
 
 .socials a {
@@ -172,5 +161,5 @@ footer {
 }
 
 .socials a:hover {
-    color: #ffc107; /* Galben */
+    color: #ffee58; /* Galben */
 }

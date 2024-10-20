@@ -9,7 +9,7 @@
 <body>
     <header>
         <div class="logo">
-            <img src="logo\logo.png" alt="Logo Știri360">
+            <img src="logo/logo1.png" alt="Logo Știri360">
         </div>
         <nav class="navbar">
             <ul>
@@ -21,24 +21,28 @@
                         <li><a href="#">Sport</a></li>
                         <li><a href="#">Cultură</a></li>
                         <li><a href="#">Lifestyle</a></li>
+                        <li><a href="#">Sociale</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Opinii</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Despre Noi</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><input type="text" placeholder="Căutare"></li>
-                <li><button>Donează</button></li>
+                <li class="search-container">
+                    <input type="text" placeholder="Căutare">
+                    <button>Donează</button>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="banner">
-            <h1>Bine ați venit la Știri360!</h1>
-            <p> Rămâi conectat, rămâi informat!</p>
-        </section>
+    <section class="banner">
+        <div class="banner-content">
+        </div>
+        <img src="poze/poz3.jpg" alt="Imagine Banner" class="banner-img">
+    </section>
 
+    <main>
         <section class="latest-news">
             <h2>Ultimele Știri</h2>
             <div class="news-card">
@@ -54,30 +58,20 @@
         </section>
 
         <section class="speakers">
-            <h2>Speakeri</h2>
+            <h2>Prezentatorii Evenimentului</h2>
             <div class="speaker">
                 <img src="poze/poz1.jpg" alt="Speaker 1">
-                <h3>Nume Speaker 1</h3>
-                <p>Funcția Speaker 1</p>
+                <div>
+                    <h3>Nume Speaker 1</h3>
+                    <p>Descriere scurtă a speakerului 1...</p>
+                </div>
             </div>
             <div class="speaker">
                 <img src="poze/poz2.jpg" alt="Speaker 2">
-                <h3>Nume Speaker 2</h3>
-                <p>Funcția Speaker 2</p>
-            </div>
-        </section>
-
-        <section class="program">
-            <h2>Program</h2>
-            <div class="event">
-                <h3>Subiect 1</h3>
-                <p>Nume Speaker: Speaker 1</p>
-                <p>Ora: 20:00 - 21:00</p>
-            </div>
-            <div class="event">
-                <h3>Subiect 2</h3>
-                <p>Nume Speaker: Speaker 2</p>
-                <p>Ora: 22:00 - 23:00</p>
+                <div>
+                    <h3>Nume Speaker 2</h3>
+                    <p>Descriere scurtă a speakerului 2...</p>
+                </div>
             </div>
         </section>
     </main>
