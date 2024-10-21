@@ -77,21 +77,18 @@ header {
     padding: 5px;
     margin-right: 10px;
 }
-
-.search-container button {
-    background-color: #ffeb3b;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    color: #141414;
-    cursor: pointer;
-    transition: background-color 0.3s;
+.donate-button {
+    background-color: #ffeb3b; /* Culoarea de fundal a butonului */
+    color: #141414; /* Culoarea textului */
+    padding: 5px 10px; /* Spațiere */
+    border-radius: 5px; /* Colțuri rotunjite */
+    text-decoration: none; /* Elimină sublinierea */
+    transition: background-color 0.3s; /* Tranziție la hover */
 }
 
-.search-container button:hover {
-    background-color: #f1c40f;
+.donate-button:hover {
+    background-color: #f1c40f; /* Culoarea de fundal la hover */
 }
-
 /* Banner */
 .banner {
     position: relative;
@@ -178,7 +175,7 @@ header {
 
 .speaker h3 {
     font-size: 1.4rem;
-    color: #0e99df;
+    color: #032130;
 }
 
 /* Footer */
