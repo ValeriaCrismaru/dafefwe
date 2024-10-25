@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Stilizare generală */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #7DAFEE; /* Albastru deschis */
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #141414; 
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    max-width: 120px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+    background-color: #7DAFEE;
+    color: #ffeb3b;
+}
+
+.navbar ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #7DAFEE;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.navbar ul li:hover ul {
+    display: block;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    border: 1px solid #7DAFEE;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+}
+.donate-button {
+    background-color: #ffeb3b; /* Culoarea de fundal a butonului */
+    color: #141414; /* Culoarea textului */
+    padding: 5px 10px; /* Spațiere */
+    border-radius: 5px; /* Colțuri rotunjite */
+    text-decoration: none; /* Elimină sublinierea */
+    transition: background-color 0.3s; /* Tranziție la hover */
+}
+
+.donate-button:hover {
+    background-color: #f1c40f; /* Culoarea de fundal la hover */
+}
+/* Banner */
+.banner {
+    position: relative;
+}
+
+.banner-content {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.banner-content h1 {
+    font-size: 2.5rem;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+}
+
+/* Secțiunea de știri */
+.latest-news {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.latest-news h2 {    color: #141414;
+    margin-bottom: 15px;
+}
+
+.news-card {
+    border: 1px solid #7DAFEE;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: box-shadow 0.3s;
+}
+
+.news-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.news-card h3 {
+    color: #7DAFEE;
+}
+
+.news-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #141414;
+    text-decoration: none;
+}
+
+.news-card a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #141414;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.socials a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.socials a:hover {
+    color: #ffee58;
+}
+
+/* Media Queries pentru design responsiv */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .banner-content {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+    }
+
+    .speaker {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .speaker img {
+        margin-bottom: 10px;
+    }
+}
+
